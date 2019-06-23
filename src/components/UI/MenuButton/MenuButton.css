@@ -1,0 +1,25 @@
+.MenuButton {
+  height: 100%;
+  width: 100%;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.MenuButton::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 0;
+  width: 42px;
+  height: 6px;
+  background: white;
+  box-shadow: 
+    0 12px white,
+    0 24px white;
+}
+
+.MenuButton button:focus {
+  outline:0;
+}
