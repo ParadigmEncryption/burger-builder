@@ -1,17 +1,19 @@
 .MenuButton {
-  height: 100%;
-  width: 100%;
+  height: 56px;
+  width: 42px;
   border: none;
   padding: 0;
   cursor: pointer;
   background-color: transparent;
+  outline:0;
 }
 
 .MenuButton::before {
   content: "";
   position: absolute;
   top: 14px;
-  left: 0;
+  left: 20px;
+  border-radius: 3px;
   width: 42px;
   height: 6px;
   background: white;
@@ -20,6 +22,9 @@
     0 24px white;
 }
 
-.MenuButton button:focus {
-  outline:0;
+/* display button on mobile devices only */
+@media (min-width: 500px) {
+  .MenuButton {
+    display: none;
+  }
 }

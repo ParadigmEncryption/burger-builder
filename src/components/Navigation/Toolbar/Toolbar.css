@@ -17,29 +17,12 @@
   height: 100%;
 }
 
-.Open {
-  transform: translateX(0);
-    /* shift position to what is defined in .SideDrawer */
-}
-
-.Close {
-  transform: translateX(-100%);
-}
-
 .Logo {
   height: 80%;
-}
-
-.MenuButton {
-  position: relative;
-  left: 0;
-  top: 0;
-  height: 56px;
-  width: 42px;
 }
 
 @media (max-width: 499px) {
   .DesktopOnly {
     display: none;
   } 
-}   /* toolbar only appears on desktop */
+}
